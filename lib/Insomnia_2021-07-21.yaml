@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2021-07-21T04:44:47.153Z
+__export_date: 2021-07-21T23:33:17.735Z
 __export_source: insomnia.desktop.app:v2021.4.1
 resources:
   - _id: req_b67a474f932446fca526166400e471e2
@@ -75,7 +75,7 @@ resources:
     _type: request_group
   - _id: req_88c67eb5b80f44feb9ea886a21cc6119
     parentId: fld_e30dafa0348d48e7b89cc1ba1de16cea
-    modified: 1626842676365
+    modified: 1626909979702
     created: 1626833527073
     url: http://localhost:3000/api/auth
     name: GET api/auth --  Get logged in user
@@ -89,13 +89,15 @@ resources:
       - name: Content-Type
         value: application/json
         id: pair_82ab8c61b35e4ea28017cdd18fd723ac
+        disabled: false
       - id: pair_534bf63be25c4c07b2572bbab70f4f1b
         name: x-auth-token
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjg0MjI2MCwiZXhwIjoxNjI2ODc4MjYwfQ.ByMiFZmQyMR_LTmWvP4ktT5rn6KxfjlxZq5Fi-H5yGs
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkwOTkyMiwiZXhwIjoxNjI2OTQ1OTIyfQ.cxmB48MaCznUaLK-ifkSUHiotgZ02oLis0Qe1W_gT44
         description: ""
+        disabled: false
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjg0MTgzOSwiZXhwIjoxNjI2ODc3ODM5fQ.nqiquH-VaXk-p_Or2EC_gXrzvAoeLDzPW4800Dt35Wg
+      token: ""
       prefix: ""
       disabled: false
     metaSortKey: -1625964144187
@@ -155,15 +157,25 @@ resources:
     _type: request
   - _id: req_a93db838e81c4edaa93265f2c01a4cc9
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626833451446
+    modified: 1626910138643
     created: 1626833239531
     url: http://localhost:3000/api/contacts
     name: GET api/contacts --  Get all user contacts
     description: ""
     method: GET
-    body: {}
+    body:
+      mimeType: application/json
+      text: ""
     parameters: []
-    headers: []
+    headers:
+      - id: pair_718eda4aa7a24d499a98d7135e555f6f
+        name: Content-Type
+        value: application/json
+        description: ""
+      - id: pair_06a40fecca29403389eece20d23f64d2
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkwOTkyMiwiZXhwIjoxNjI2OTQ1OTIyfQ.cxmB48MaCznUaLK-ifkSUHiotgZ02oLis0Qe1W_gT44
+        description: ""
     authentication: {}
     metaSortKey: -1625530251951.5
     isPrivate: false
