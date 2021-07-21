@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2021-07-21T23:33:17.735Z
+__export_date: 2021-07-21T23:47:56.960Z
 __export_source: insomnia.desktop.app:v2021.4.1
 resources:
   - _id: req_b67a474f932446fca526166400e471e2
@@ -34,7 +34,7 @@ resources:
     _type: workspace
   - _id: req_c2f6a46c83f04d9693d2bdca00d7bc45
     parentId: fld_1a938c0fabf0489ab00f65238cdc30c4
-    modified: 1626840645853
+    modified: 1626911178948
     created: 1626833190581
     url: http://localhost:3000/api/users
     name: POST api/users -- Register a user
@@ -44,8 +44,8 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"name": "John Doe",
-        	"email": "johndoe@email.com",
+        	"name": "Sam Smith",
+        	"email": "sam@email.com",
         	"password": "123456"
         }
     parameters: []
@@ -75,7 +75,7 @@ resources:
     _type: request_group
   - _id: req_88c67eb5b80f44feb9ea886a21cc6119
     parentId: fld_e30dafa0348d48e7b89cc1ba1de16cea
-    modified: 1626909979702
+    modified: 1626911197712
     created: 1626833527073
     url: http://localhost:3000/api/auth
     name: GET api/auth --  Get logged in user
@@ -92,7 +92,7 @@ resources:
         disabled: false
       - id: pair_534bf63be25c4c07b2572bbab70f4f1b
         name: x-auth-token
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkwOTkyMiwiZXhwIjoxNjI2OTQ1OTIyfQ.cxmB48MaCznUaLK-ifkSUHiotgZ02oLis0Qe1W_gT44
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmOGIxY2RiNmY1YzE3YzU4OTdhY2VkIn0sImlhdCI6MTYyNjkxMTE4MSwiZXhwIjoxNjI2OTQ3MTgxfQ.T2RWckJFtigzzziMcO6CDOw-pHcs6SkGZeWddEpvQy4
         description: ""
         disabled: false
     authentication:
@@ -157,7 +157,7 @@ resources:
     _type: request
   - _id: req_a93db838e81c4edaa93265f2c01a4cc9
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626910138643
+    modified: 1626911257869
     created: 1626833239531
     url: http://localhost:3000/api/contacts
     name: GET api/contacts --  Get all user contacts
@@ -174,8 +174,14 @@ resources:
         description: ""
       - id: pair_06a40fecca29403389eece20d23f64d2
         name: x-auth-token
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkwOTkyMiwiZXhwIjoxNjI2OTQ1OTIyfQ.cxmB48MaCznUaLK-ifkSUHiotgZ02oLis0Qe1W_gT44
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkxMTA0MiwiZXhwIjoxNjI2OTQ3MDQyfQ.O0M5ypgKWoUrU4uSnxrfs5LxYXepi-QC7T54gijp--M
         description: ""
+        disabled: true
+      - id: pair_35386f44b814464bbd4adaf954398204
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmOGIxY2RiNmY1YzE3YzU4OTdhY2VkIn0sImlhdCI6MTYyNjkxMTE4MSwiZXhwIjoxNjI2OTQ3MTgxfQ.T2RWckJFtigzzziMcO6CDOw-pHcs6SkGZeWddEpvQy4
+        description: ""
+        disabled: false
     authentication: {}
     metaSortKey: -1625530251951.5
     isPrivate: false
@@ -198,15 +204,35 @@ resources:
     _type: request_group
   - _id: req_6efb2c904e194538ac3ba6ae6ecdf23d
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626833462583
+    modified: 1626911244527
     created: 1626833270224
     url: http://localhost:3000/api/contacts
     name: POST api/contacts -- add new contact
     description: ""
     method: POST
-    body: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Fred Flintstone",
+        	"email": "fred@gmail.com",
+        	"phone": "111-121-3333"
+        }
     parameters: []
-    headers: []
+    headers:
+      - id: pair_3220d6f4e23c4b99bac6c6f23ec24a1b
+        name: Content-Type
+        value: application/json
+        description: ""
+      - id: pair_66a12650bf324e4bbc86165a8470aea3
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkxMTA0MiwiZXhwIjoxNjI2OTQ3MDQyfQ.O0M5ypgKWoUrU4uSnxrfs5LxYXepi-QC7T54gijp--M
+        description: ""
+        disabled: true
+      - id: pair_7dea136e18a74e668b3d7e87fbc6b0bd
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmOGIxY2RiNmY1YzE3YzU4OTdhY2VkIn0sImlhdCI6MTYyNjkxMTE4MSwiZXhwIjoxNjI2OTQ3MTgxfQ.T2RWckJFtigzzziMcO6CDOw-pHcs6SkGZeWddEpvQy4
+        description: ""
     authentication: {}
     metaSortKey: -1625530251939
     isPrivate: false
