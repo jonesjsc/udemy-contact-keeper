@@ -6,6 +6,11 @@ const app = express();
 // Connect to the database
 connectDB();
 
+// Init Middleware
+// (express.json is built-in middleware function in Express
+// which parses incoming request with JSON payloads
+app.use(express.json({ extended: false }));
+
 app.get('/', (req, res) =>
   res.json({ msg: 'Welcome to the ContactKeeper API...' })
 );
