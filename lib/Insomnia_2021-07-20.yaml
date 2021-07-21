@@ -1,0 +1,237 @@
+_type: export
+__export_format: 4
+__export_date: 2021-07-21T02:16:12.381Z
+__export_source: insomnia.desktop.app:v2021.4.1
+resources:
+  - _id: req_b67a474f932446fca526166400e471e2
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626833502247
+    created: 1626831929208
+    url: http://localhost:3000
+    name: GET / -- server.js basic test
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1626833435447
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_187c7b542f2e4b16b5895951e451e078
+    parentId: null
+    modified: 1626831918328
+    created: 1626831918328
+    name: udemy-contactapp
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_c2f6a46c83f04d9693d2bdca00d7bc45
+    parentId: fld_1a938c0fabf0489ab00f65238cdc30c4
+    modified: 1626833428639
+    created: 1626833190581
+    url: http://localhost:3000/api/users
+    name: POST api/users -- Register a user
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625964144237
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_1a938c0fabf0489ab00f65238cdc30c4
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626833579724
+    created: 1626833423584
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1626833435422
+    _type: request_group
+  - _id: req_88c67eb5b80f44feb9ea886a21cc6119
+    parentId: fld_e30dafa0348d48e7b89cc1ba1de16cea
+    modified: 1626833594882
+    created: 1626833527073
+    url: http://localhost:3000/api/auth
+    name: GET api/auth --  Get all user contacts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625964144187
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_e30dafa0348d48e7b89cc1ba1de16cea
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626833581843
+    created: 1626833537988
+    name: Auth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1626833435409.5
+    _type: request_group
+  - _id: req_4ade5fdd243045a899078ea4fefb8b87
+    parentId: fld_e30dafa0348d48e7b89cc1ba1de16cea
+    modified: 1626833634618
+    created: 1626833622764
+    url: http://localhost:3000/api/auth
+    name: POST api/auth --  Auth user & get token
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625747198069.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a93db838e81c4edaa93265f2c01a4cc9
+    parentId: fld_8ef8299d7e13439890d276d7025a1bd9
+    modified: 1626833451446
+    created: 1626833239531
+    url: http://localhost:3000/api/contacts
+    name: GET api/contacts --  Get all user contacts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625530251951.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8ef8299d7e13439890d276d7025a1bd9
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626833435397
+    created: 1626833435397
+    name: Contacts
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1626833435397
+    _type: request_group
+  - _id: req_6efb2c904e194538ac3ba6ae6ecdf23d
+    parentId: fld_8ef8299d7e13439890d276d7025a1bd9
+    modified: 1626833462583
+    created: 1626833270224
+    url: http://localhost:3000/api/contacts
+    name: POST api/contacts -- add new contact
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625530251939
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b2d0c30c421f42e2a7f9ee2a6d373e01
+    parentId: fld_8ef8299d7e13439890d276d7025a1bd9
+    modified: 1626833454539
+    created: 1626833305920
+    url: http://localhost:3000/api/contacts/1
+    name: PUT api/contacts/:id -- update contact
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625530251926.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1963efe0fd4d4a99a54710ae4112387f
+    parentId: fld_8ef8299d7e13439890d276d7025a1bd9
+    modified: 1626833445141
+    created: 1626833386710
+    url: http://localhost:3000/api/contacts/1
+    name: DELETE api/contacts/:id -- Delete contact
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625530251801.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_7708c78469edc1fa89e51f2c19618c1374da2b53
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626831918564
+    created: 1626831918564
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1626831918564
+    _type: environment
+  - _id: jar_7708c78469edc1fa89e51f2c19618c1374da2b53
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626831918578
+    created: 1626831918578
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_4eb17875180746f390ff4a0fbe7b37c7
+    parentId: wrk_187c7b542f2e4b16b5895951e451e078
+    modified: 1626831918334
+    created: 1626831918334
+    fileName: udemy-contactapp
+    contents: ""
+    contentType: yaml
+    _type: api_spec
