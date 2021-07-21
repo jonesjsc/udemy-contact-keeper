@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2021-07-21T03:17:41.438Z
+__export_date: 2021-07-21T04:11:22.775Z
 __export_source: insomnia.desktop.app:v2021.4.1
 resources:
   - _id: req_b67a474f932446fca526166400e471e2
@@ -34,7 +34,7 @@ resources:
     _type: workspace
   - _id: req_c2f6a46c83f04d9693d2bdca00d7bc45
     parentId: fld_1a938c0fabf0489ab00f65238cdc30c4
-    modified: 1626837407383
+    modified: 1626840645853
     created: 1626833190581
     url: http://localhost:3000/api/users
     name: POST api/users -- Register a user
@@ -45,7 +45,7 @@ resources:
       text: |-
         {
         	"name": "John Doe",
-        	"email": "john@email.com",
+        	"email": "johndoe@email.com",
         	"password": "123456"
         }
     parameters: []
@@ -106,15 +106,24 @@ resources:
     _type: request_group
   - _id: req_4ade5fdd243045a899078ea4fefb8b87
     parentId: fld_e30dafa0348d48e7b89cc1ba1de16cea
-    modified: 1626833634618
+    modified: 1626840666116
     created: 1626833622764
     url: http://localhost:3000/api/auth
     name: POST api/auth --  Auth user & get token
     description: ""
     method: POST
-    body: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email":"johndoe@email.com",
+        	"password":"123456"
+        }
     parameters: []
-    headers: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_82236029723d4edf8044001dc0ead3a3
     authentication: {}
     metaSortKey: -1625747198069.25
     isPrivate: false
