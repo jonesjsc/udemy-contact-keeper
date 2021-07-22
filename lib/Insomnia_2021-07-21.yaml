@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2021-07-21T23:47:56.960Z
+__export_date: 2021-07-22T00:16:22.905Z
 __export_source: insomnia.desktop.app:v2021.4.1
 resources:
   - _id: req_b67a474f932446fca526166400e471e2
@@ -157,7 +157,7 @@ resources:
     _type: request
   - _id: req_a93db838e81c4edaa93265f2c01a4cc9
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626911257869
+    modified: 1626912185107
     created: 1626833239531
     url: http://localhost:3000/api/contacts
     name: GET api/contacts --  Get all user contacts
@@ -179,7 +179,7 @@ resources:
         disabled: true
       - id: pair_35386f44b814464bbd4adaf954398204
         name: x-auth-token
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmOGIxY2RiNmY1YzE3YzU4OTdhY2VkIn0sImlhdCI6MTYyNjkxMTE4MSwiZXhwIjoxNjI2OTQ3MTgxfQ.T2RWckJFtigzzziMcO6CDOw-pHcs6SkGZeWddEpvQy4
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkxMjE2MSwiZXhwIjoxNjI2OTQ4MTYxfQ.RrhaILrjl_2YY7RTIw1OAIoPDrdGADGp0rG0wbzQTTQ
         description: ""
         disabled: false
     authentication: {}
@@ -204,7 +204,7 @@ resources:
     _type: request_group
   - _id: req_6efb2c904e194538ac3ba6ae6ecdf23d
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626911244527
+    modified: 1626912293301
     created: 1626833270224
     url: http://localhost:3000/api/contacts
     name: POST api/contacts -- add new contact
@@ -214,7 +214,7 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"name": "Fred Flintstone",
+        	"name": "Wilma Flintstone",
         	"email": "fred@gmail.com",
         	"phone": "111-121-3333"
         }
@@ -245,15 +245,34 @@ resources:
     _type: request
   - _id: req_b2d0c30c421f42e2a7f9ee2a6d373e01
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626833454539
+    modified: 1626912538971
     created: 1626833305920
-    url: http://localhost:3000/api/contacts/1
+    url: http://localhost:3000/api/contacts/60f8b62749d82a5ba40f91cc
     name: PUT api/contacts/:id -- update contact
     description: ""
     method: PUT
-    body: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"phone": "555-444-4444"
+        }
     parameters: []
-    headers: []
+    headers:
+      - id: pair_6e14e8271a4e4bf28d2760568746c3ac
+        name: Content-Type
+        value: application/json
+        description: ""
+      - id: pair_1df1c81991a846248cadf400b14291ae
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkxMTA0MiwiZXhwIjoxNjI2OTQ3MDQyfQ.O0M5ypgKWoUrU4uSnxrfs5LxYXepi-QC7T54gijp--M
+        description: ""
+        disabled: true
+      - id: pair_10a3cc8530574b2697384fde4d5cef6e
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmOGIxY2RiNmY1YzE3YzU4OTdhY2VkIn0sImlhdCI6MTYyNjkxMTE4MSwiZXhwIjoxNjI2OTQ3MTgxfQ.T2RWckJFtigzzziMcO6CDOw-pHcs6SkGZeWddEpvQy4
+        description: ""
+        disabled: false
     authentication: {}
     metaSortKey: -1625530251926.5
     isPrivate: false
@@ -266,15 +285,23 @@ resources:
     _type: request
   - _id: req_1963efe0fd4d4a99a54710ae4112387f
     parentId: fld_8ef8299d7e13439890d276d7025a1bd9
-    modified: 1626833445141
+    modified: 1626912955807
     created: 1626833386710
-    url: http://localhost:3000/api/contacts/1
+    url: http://localhost:3000/api/contacts/60f8b1a4b6f5c17c5897ace9
     name: DELETE api/contacts/:id -- Delete contact
     description: ""
     method: DELETE
     body: {}
     parameters: []
-    headers: []
+    headers:
+      - id: pair_c9f3a505a85041708e74aac9230c19be
+        name: Content-Type
+        value: application/json
+        description: ""
+      - id: pair_eeb817980c074d5b9fc0cae0a1a77cea
+        name: x-auth-token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjBmNzllNDlmNWMzYjg4NWI0N2JkN2FjIn0sImlhdCI6MTYyNjkxMjE2MSwiZXhwIjoxNjI2OTQ4MTYxfQ.RrhaILrjl_2YY7RTIw1OAIoPDrdGADGp0rG0wbzQTTQ
+        description: ""
     authentication: {}
     metaSortKey: -1625530251801.5
     isPrivate: false
